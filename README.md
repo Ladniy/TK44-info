@@ -2,7 +2,7 @@
 
 ![Title Image](https://i.imgur.com/ZL7ijve.png)
 
-TK44 - is a wireless unibody 40% keyboard with features like:
+**TK44 - is a wireless unibody 40% keyboard with features like:**
 
 * Powered by [ZMK Firmware](https://zmk.dev/docs/)
 * Based on [Holyiot-18010](http://www.holyiot.com/tp/2019042516322180424.pdf) module
@@ -72,3 +72,60 @@ FR-4 case, as well as the PCB, have cutoffs for breaking off pinky-key.
 
 * Additional:
   * Silicone Bumpers: [black](https://aliexpress.com/item/32912066603.html) or [clear](https://aliexpress.com/item/32680543746.html)
+
+# Firmware
+
+### Flashing controller
+
+For this operation you need J-Link clone programmer, like this:
+
+<img src="https://i.imgur.com/nZcdqkH.jpg"/>
+
+**[Aliexpress 5.49$](https://aliexpress.com/item/32669702891.html)**
+
+### Unlocking controller
+
+First of all download and install [SEGGER J-Link 6.70b](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
+
+And download [J-Flash project](https://github.com/Ladniy/jiran-ble-lite/releases/download/v1.1.2/jiran_ble_lite_project.jflash)
+
+<img src="https://i.imgur.com/0X5wmET.png"/>
+
+* Connect programmer's pins (VCC, GND, SWC, SWD) to PCB's pins (same pins, marked by silkscreen).
+  * You can connect only SWC and SWD pins, in this case, power PCB via USB-C **(please, make sure that battery not installed and power switch in OFF positon)**.
+* Connect programmer to PC via USB cable.
+* Open JFlash.
+* Choose **Open recent project** and choose project file, that you download earlier.
+* Click **Start J-Flash**
+
+**After that:**
+
+* Connect to controller: Target --> Connect (**make sure that connect between programmer and PCB is stable, hold wires tight in PCB!**)
+* After succesfull connect: Target --> Disconnect
+
+### Bootloader
+
+Download [TK44 bootlader](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases/download/0.2.11/pca10056_bootloader-0.2.11_s140_6.1.1.hex)
+
+Move bootlader hex file into root directory (as example: C: disk for windows)
+
+<img src="https://i.imgur.com/kco8mwP.png"/>
+
+* Open JFlashLite, select NRF52840_XXAA if it doesn't at program start.
+* Select bootloader and press Program Device, wait for flashing.
+
+## Flashing Firmware
+
+* After flashing controller you need to download ZMK firmware files:
+  * [ZMK firmware](https://github.com/Ladniy/jiran-ble-lite/releases/download/v1.1.2/software.zip)
+* Extract archive, move file from folder to a directory of your choice
+* Connect PCB through USB Type-C
+* Move tkkkkk** file into opened explorer window (just like moving files to a USB flash drive)
+
+**After this you can freely connect your TK44 keyboard to PC!**
+
+## References
+
+[Joric's flashing instuction (a lot of variants)](https://github.com/joric/nrfmicro/wiki/Bootloader)
+
+[luantty2 flashing instruction](https://github.com/luantty2/nRF52840-instruction#%E6%A8%A1%E5%9D%97%E7%83%A7%E5%BD%95%E5%9B%BA%E4%BB%B6%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C)
