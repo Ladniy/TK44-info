@@ -75,7 +75,7 @@ FR-4 case, as well as the PCB, have cutoffs for breaking off pinky-key.
 
 # Firmware
 
-### Flashing controller
+## Flashing controller
 
 For this operation you need J-Link clone programmer, like this:
 
@@ -83,7 +83,7 @@ For this operation you need J-Link clone programmer, like this:
 
 **[Aliexpress 5.49$](https://aliexpress.com/item/32669702891.html)**
 
-### Unlocking controller
+## Unlocking controller
 
 First of all download and install [SEGGER J-Link 6.70b](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
 
@@ -103,7 +103,7 @@ And download [J-Flash project](https://github.com/Ladniy/jiran-ble-lite/releases
 * Connect to controller: Target --> Connect (**make sure that connect between programmer and PCB is stable, hold wires tight in PCB!**)
 * After succesfull connect: Target --> Disconnect
 
-### Bootloader
+## Bootloader
 
 Download [TK44 bootlader](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases/download/0.2.11/pca10056_bootloader-0.2.11_s140_6.1.1.hex)
 
