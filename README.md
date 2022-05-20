@@ -87,7 +87,7 @@ For this operation you need J-Link clone programmer, like this:
 
 First of all download and install [SEGGER J-Link 6.70b](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
 
-And download [J-Flash project](https://github.com/Ladniy/jiran-ble-lite/releases/download/v1.1.2/jiran_ble_lite_project.jflash)
+And download [J-Flash project](https://github.com/Ladniy/TK44-info/releases/download/v1.0/tk44_project.jflash)
 
 <img src="https://i.imgur.com/0X5wmET.png"/>
 
@@ -105,7 +105,7 @@ And download [J-Flash project](https://github.com/Ladniy/jiran-ble-lite/releases
 
 ## Bootloader
 
-Download [TK44 bootlader](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases/download/0.2.11/pca10056_bootloader-0.2.11_s140_6.1.1.hex)
+Download [TK44 bootlader](https://github.com/Ladniy/TK44-info/releases/download/v1.0/tk44_bootloader-0.6.3-49-ge18dabd-dirty_s140_6.1.1.hex)
 
 Move bootlader hex file into root directory (as example: C: disk for windows)
 
@@ -116,9 +116,10 @@ Move bootlader hex file into root directory (as example: C: disk for windows)
 
 ## Flashing Firmware
 
-* After flashing controller you need to download ZMK firmware files:
-  * [ZMK firmware](https://github.com/Ladniy/jiran-ble-lite/releases/download/v1.1.2/software.zip)
-* Extract archive, move file from folder to a directory of your choice
+* After flashing controller you need to download ZMK firmware file:
+  * [ZMK firmware](https://github.com/Ladniy/TK44-info/releases/download/v1.0/tk44-zmk.uf2)
+  * [Or build by yourself](https://github.com/krikun98/zmk-config/tree/tk44)
+* Move file from download folder to a directory of your choice for easy access
 * Connect PCB through USB Type-C
 * Move tkkkkk** file into opened explorer window (just like moving files to a USB flash drive)
 
