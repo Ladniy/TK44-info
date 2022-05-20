@@ -121,7 +121,7 @@ Move bootlader hex file into root directory (as example: C: disk for windows)
   * [Or build by yourself](https://github.com/krikun98/zmk-config/tree/tk44)
 * Move file from download folder to a directory of your choice for easy access
 * Connect PCB through USB Type-C
-* Move tkkkkk** file into opened explorer window (just like moving files to a USB flash drive)
+* Move tk44-zmk.uf2 file into opened explorer window (just like moving files to a USB flash drive)
 
 **After this you can freely connect your TK44 keyboard to PC!**
 
