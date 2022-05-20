@@ -26,6 +26,10 @@ There is "dummy" layout, just for reference
 
 # Build Guide
 
+Please, use [**iBom file**](https://github.com/Ladniy/TK44-info/releases/download/v1.0/ibom.html) for the correct placement of components on the PCB
+
+![iBom Image](https://i.imgur.com/vGK9sAb.png)
+
 ## BOM
 
 | Name               | Qty | Package  | Value       | Aliexpress                                                      |
