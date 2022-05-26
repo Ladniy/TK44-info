@@ -51,8 +51,8 @@ Please, use [**iBom file**](https://github.com/Ladniy/TK44-info/releases/downloa
 | Reset Switch       | 1   | SMD      | 5.2x5.2x1.5 | [0.64$ / 50](https://aliexpress.com/item/32989610390.html)      |
 | Hotswap Sockets    | 44  | SMD      | MX          | [3.40$ / 30](https://aliexpress.com/item/1005003166749340.html) |
 | Battery Connector  | 1   | JST 1.25 | 2 Pin       | [1.64$ / 50](https://aliexpress.com/item/10000064127272.html)   |
-| JST Male Wire      | 1   | JST 1.25 | 2 Pin       | [0.70$ / 20](https://aliexpress.co/item/1005002957075278.html)  |
-| Battery            | 1   | 502035   | 300mAh      | [3.65$ / 1](https://aliexpress.ru/item/1005003258617053.html)   |
+| JST Male Wire      | 1   | JST 1.25 | 2 Pin       | [0.70$ / 20](https://aliexpress.com/item/1005002957075278.html)  |
+| Battery            | 1   | 502035   | 300mAh      | [3.65$ / 1](https://aliexpress.comitem/1005003258617053.html)   |
 
 
 * Holyiot module have several verison:
