@@ -96,7 +96,7 @@ And download [J-Flash project](https://github.com/Ladniy/TK44-info/releases/down
 <img src="https://i.imgur.com/0X5wmET.png"/>
 
 * Connect programmer's pins (VCC, GND, SWC, SWD) to PCB's pins (same pins, marked by silkscreen).
-  * You can connect only SWC and SWD pins, in this case, power PCB via USB-C **(please, make sure that battery not installed and power switch in OFF positon)**.
+  * Also, you can connect only SWC and SWD pins, in this case power PCB via USB-C **(please, make sure that battery not installed and power switch in OFF positon)**.
 * Connect programmer to PC via USB cable.
 * Open JFlash.
 * Choose **Open recent project** and choose project file, that you download earlier.
